@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎓"
+            android:textSize="56sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Campus"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register once, stay signed in!"
+            android:textSize="14sp"
+            android:textColor="#6B7280"
+            android:layout_marginBottom="32dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Create Account"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#1F2937"
+                    android:layout_marginBottom="16dp"/>
+
+                <EditText
+                    android:id="@+id/etLoginName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="12dp"
+                    android:padding="12dp"
+                    android:background="@drawable/input_background"
+                android:textColor="#000000"
+                android:textColorHint="#9CA3AF"/>
+
+                <EditText
+                    android:id="@+id/etLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="12dp"
+                    android:padding="12dp"
+                    android:background="@drawable/input_background"
+                android:textColor="#000000"
+                android:textColorHint="#9CA3AF"/>
+
+                <EditText
+                    android:id="@+id/etLoginPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="10-digit Phone Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:layout_marginBottom="20dp"
+                    android:padding="12dp"
+                    android:background="@drawable/input_background"
+                android:textColor="#000000"
+                android:textColorHint="#9CA3AF"/>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="GET STARTED"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/purple_700"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practical 7: SharedPreferences — Your info is saved\nand this screen won't appear again on next launch."
+            android:textSize="11sp"
+            android:textColor="#9CA3AF"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

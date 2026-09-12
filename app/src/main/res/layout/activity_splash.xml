@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_700"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎓"
+        android:textSize="72sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Campus"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RCOEM, Nagpur"
+        android:textSize="16sp"
+        android:textColor="#CCFFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvLifecycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initializing..."
+        android:textSize="13sp"
+        android:textColor="#AAFFFFFF"
+        android:layout_marginTop="48dp"
+        android:fontFamily="monospace"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@android:color/white"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

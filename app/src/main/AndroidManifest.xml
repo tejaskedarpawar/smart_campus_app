@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCampus">
+
+        <!-- P1: Splash / Main Dashboard -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- P7: Login (SharedPreferences) -->
+        <activity android:name=".activities.LoginActivity" android:exported="false"/>
+
+        <!-- Dashboard -->
+        <activity android:name=".activities.DashboardActivity" android:exported="false"/>
+
+        <!-- P2: Health Checkup -->
+        <activity android:name=".activities.HealthCheckupActivity" android:exported="false"/>
+
+        <!-- P3: Food Ordering -->
+        <activity android:name=".activities.FoodOrderingActivity" android:exported="false"/>
+
+        <!-- P4: Hospital Appointment -->
+        <activity android:name=".activities.AppointmentActivity" android:exported="false"/>
+
+        <!-- P5: Intent Demo (Second Activity) -->
+        <activity android:name=".activities.IntentActionActivity" android:exported="false"/>
+
+        <!-- P6: Quiz -->
+        <activity android:name=".activities.QuizActivity" android:exported="false"/>
+
+        <!-- P6: Quiz Result -->
+        <activity android:name=".activities.QuizResultActivity" android:exported="true"/>
+
+        <!-- P8: Student Registration -->
+        <activity android:name=".activities.StudentRegistrationActivity" android:exported="false"/>
+
+    </application>
+
+</manifest>

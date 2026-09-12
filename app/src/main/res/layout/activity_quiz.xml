@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:padding="16dp"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝 Campus Quiz"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P6: Dialog + Notifications + PendingIntent"
+                android:textSize="12sp"
+                android:textColor="#CCFFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Q1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Q1: What is the capital of India?"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"
+                        android:layout_marginBottom="8dp"/>
+                    <RadioGroup android:id="@+id/rgQ1" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Delhi" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Mumbai" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Kolkata" android:buttonTint="@color/purple_700"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Q2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Q2: Who developed Java?"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"
+                        android:layout_marginBottom="8dp"/>
+                    <RadioGroup android:id="@+id/rgQ2" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="James Gosling" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Dennis Ritchie" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Bjarne Stroustrup" android:buttonTint="@color/purple_700"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Q3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Q3: Android is based on which kernel?"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"
+                        android:layout_marginBottom="8dp"/>
+                    <RadioGroup android:id="@+id/rgQ3" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Linux" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Windows" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="MacOS" android:buttonTint="@color/purple_700"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Q4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Q4: Google's preferred language for Android development?"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"
+                        android:layout_marginBottom="8dp"/>
+                    <RadioGroup android:id="@+id/rgQ4" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Java" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Kotlin" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Python" android:buttonTint="@color/purple_700"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Q5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp" app:cardElevation="2dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Q5: Default database in Android?"
+                        android:textSize="15sp" android:textStyle="bold" android:textColor="#1F2937"
+                        android:layout_marginBottom="8dp"/>
+                    <RadioGroup android:id="@+id/rgQ5" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="SQLite" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="MySQL" android:buttonTint="@color/purple_700"/>
+                        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="MongoDB" android:buttonTint="@color/purple_700"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSubmitQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="SUBMIT QUIZ"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
