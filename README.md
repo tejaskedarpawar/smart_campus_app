@@ -2,7 +2,7 @@
 
 An Android Studio project that brings common campus services into one small Java application. Smart Campus App combines student login, health support, food ordering, appointments, intent demonstrations, quizzes, and student registration in a single dashboard.
 
-> Built for RCOEM B.Tech CSE Semester IV, Software Laboratory-II (24CS01PR0404).
+> Built for RBU B.Tech CSE Semester IV, Software Laboratory-II (24CS01PR0404).
 
 ## Features
 
