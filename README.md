@@ -81,6 +81,4 @@ SmartCampusApp/
 - Dependencies: AndroidX AppCompat, Material Components, ConstraintLayout, and CardView
 - Storage: `SharedPreferences` for login state and SQLite for student records
 
-## Learning coverage
 
-This project is organized as eight practical exercises while still behaving like one coherent campus utility app. It is intended for learning Android activities, layouts, validation, intents, notifications, preferences, and local database operations.
